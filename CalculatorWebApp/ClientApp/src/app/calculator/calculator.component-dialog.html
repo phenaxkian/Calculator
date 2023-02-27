@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Calculate: {{firstValue}} {{action}} </h1>
+<div mat-dialog-content>
+  <p></p>
+  <input matInput class="form-control" type="number" style="margin-bottom:10px" [(ngModel)]="display">
+</div>
+<div class="container">
+  <div class="row">
+    <button type="button" class="btn btn-primary col-sm"  (click)="Operation('+')">+</button>
+    <button type="button" class="btn btn-primary col-sm"  (click)="Operation('-')">-</button>
+  </div>
+  <div class="row">
+    <button type="button" class="btn btn-primary col-sm" mat-raised-button (click)="Calculate()">=</button>
+    <button type="button" class="btn btn-primary col-sm" mat-raised-button (click)="Clear()">Clear</button>
+  </div>
+  <div class="row">
+    <button type="button" class="btn btn-danger col" mat-raised-button (click)="closeDialog()">Close</button>
+  </div>
+</div>

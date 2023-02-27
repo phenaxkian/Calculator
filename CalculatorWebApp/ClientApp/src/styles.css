@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 30px;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Not going to override the default Angular / Bootstrap styling but this class is applied to the calc by default. */
+.DefaultDialogStyle > mat-dialog-container {
+}
+
+/* Just change the colours to clearly indicate a change in style. */
+.AltDialogStyle >  mat-dialog-container {
+    background: #333;
+    color: #CCC;
+}
