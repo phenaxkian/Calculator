@@ -17,7 +17,6 @@ export class CalculatorComponent {
   openDialog(): void {
     const dialogRef = this.dialog.open(CalculatorComponentDialog, {
       width: '750px',
-      data: { style: this.styleToUse },
       panelClass: this.styleToUse
     });
 
@@ -38,7 +37,6 @@ export class CalculatorComponent {
   templateUrl: './calculator.component-dialog.html'
 })
 export class CalculatorComponentDialog {
-  //@Output() closeModalEvent = new EventEmitter();
 
   display: string | null = null;
   firstValue: number | null = null;
@@ -89,7 +87,7 @@ export class CalculatorComponentDialog {
           this.display = String(response);
           this.action = null;
         }, error => {
-          //Handle the error / show some user appropriate message (probably not telling them to check the console).
+          //Handle the error / show some user appropriate message (ideally we wouldn't tell them to check the consolem but for demonstration purposes this is fine).
           console.log(error);
           alert("A Problem has occured. Please check console for details.");
           this.Clear();
