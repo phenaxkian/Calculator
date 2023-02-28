@@ -27,7 +27,7 @@ Dialog code based on the documentation and code examples for Angular material (v
 ### Styling
 Most styling comes from Bootstrap / Angular Material. There are 2 custom CSS Styles present in the Style.CSS used to change the style of the Dialog. The DefaultDialogStyle doesn't have any rules in it, but is present to show where the rules would be placed if styling was desired. The AltDialogStyle has some rules to change the background and text colours. 
 
-In the event of a particular small display the Calculator Dialog is responsive and should change the layout of the buttons to be a single vertical list.
+In the event of a small display (e.g. mobile) the Calculator Dialog is responsive and should change the layout of the buttons to be a single vertical list.
 
 The "deeppurple-amber" style sheet is an Angular Material theme and doesn't contain any custom CSS on my part. 
 
